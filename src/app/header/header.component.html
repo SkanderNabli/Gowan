@@ -1,0 +1,26 @@
+<header id="header" role="banner" class="main-header" >
+  <div class="lineHeader"></div>
+  <div class="header-inner">
+
+    <div class="header-logo">
+      <a routerLink="/"><p class="logoHeader">gowan</p></a>
+    </div>
+
+    <nav class="barre" [ngClass]="{'openSize' : menuStatus}">
+      <div class="circle" [ngClass]="{'expand' : menuStatus}"></div>
+      <div class="menu" >
+        <ul>
+          <li [ngClass]="{'animate' : menuStatus}"><a class="effect" (click)="ChangeStatusMenu()" routerLink="/Realisations/IdentiteVisuelles">Realisation</a></li>
+          <li [ngClass]="{'animate' : menuStatus}"><a class="effect" (click)="ChangeStatusMenu()" routerLink="/Contact">Contact</a></li>
+          <li [ngClass]="{'animate' : menuStatus}"><a class="effect" (click)="ChangeStatusMenu()" href="https://www.instagram.com/_gowan/"><fa-icon [icon]="faInstagram"></fa-icon></a></li>
+        </ul>
+      </div>
+      <div class="burger" (click)="ChangeStatusMenu()" >
+        <div class="x" [ngClass]="{'collapse' : menuStatus}"></div>
+        <div class="y"></div>
+        <div class="z" [ngClass]="{'collapse' : menuStatus}"></div>
+      </div>
+    </nav>
+
+  </div>
+</header>

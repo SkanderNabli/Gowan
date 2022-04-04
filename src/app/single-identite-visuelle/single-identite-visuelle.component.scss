@@ -1,0 +1,138 @@
+.descItem{
+  font-family: Montserrat-Medium;
+  padding: 70px 25%;
+  background-image: url("../../assets/img/block_marbre.jpg");
+  display: flex;
+  color: white;
+
+  .rightItem,.leftItem{
+    width: 50%;
+  }
+
+  .rightItem{
+    p{
+      padding: 10px 0 10px 20px;
+      border-left: #ff003c 2px solid;
+      line-height: 25px;
+      text-transform: uppercase;
+    }
+  }
+
+  .leftItem{
+    .title{
+      font-size:35px;
+      font-family: "Montserrat-ExtraBold";
+      text-transform: uppercase;
+    }
+    .ville{
+      font-family: "Montserrat Medium";
+      color: #a3a3a3;
+    }
+
+    .link{
+      font-family: Montserrat-Bold;
+      margin: 35px 0;
+
+      a {
+        color: #a3a3a3;
+      }
+    }
+  }
+}
+
+.mockup{
+  margin: 0 20%;
+  width: 60vw;
+  background-color: white;
+
+  img {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+
+  .logoType{
+    margin: 0 35%;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.solo{
+  margin: 0 10%;
+
+  img{
+    width: 100%;
+  }
+}
+
+.duo{
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+
+  img{
+    width:35%;
+    height: 100%;
+
+    &:first-child{
+      width:50%;
+      margin-top: 100px;
+    }
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .descItem {
+    padding: 70px 10%;
+    flex-direction: column;
+
+    .rightItem,
+    .leftItem{
+      width: 100%;
+    }
+
+    .leftItem{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .rightItem {
+      p {
+        padding: 30px 0 10px 20px;
+        text-align: center;
+        border-top: #ff003c 2px solid;
+        border-left: none;
+      }
+    }
+  }
+
+  .mockup{
+    margin: initial;
+    width: initial;
+
+    .logoType {
+      margin: 0px 25%;
+    }
+  }
+
+  .duo {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    img{
+      width: 50%;
+
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+}

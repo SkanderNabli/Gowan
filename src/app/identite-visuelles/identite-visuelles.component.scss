@@ -1,0 +1,14 @@
+.grid-identiteVisuelles {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  flex-wrap:wrap ;
+}
+
+@media screen and (max-width: 768px) {
+
+  .grid-identiteVisuelles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

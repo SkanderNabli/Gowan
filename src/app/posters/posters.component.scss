@@ -1,0 +1,14 @@
+.grid-posters {
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-posters {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

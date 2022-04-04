@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/stylesheet.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: url("assets/img/cursor.png") 7 7, pointer;
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+a {
+  cursor: url("assets/img/cursor.png") 7 7, pointer;
+  text-decoration: none;
+  color: black;
+
+  fa-icon {
+
+    &:hover {
+      color: #ff003c;
+    }
+  }
+
+  &.effect {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #ff003c, #ff003c 50%, #000000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+
+    &.active {
+      background: linear-gradient(to right, #ff003c, #ff003c 50%, #a3a3a3 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: 200% 100%;
+      background-position: 100%;
+    }
+
+    &:hover {
+      background-position: 0 100%;
+    }
+
+  }
+
+}
+
+.separation{
+  color: #ff003c;
+  font-family: "Fatalitys-Edge"!important;
+  font-size: 26px;
+  margin: auto;
+}
+

@@ -1,0 +1,27 @@
+<app-realisations></app-realisations>
+
+<div class="descItem">
+  <div class="leftItem">
+    <div class="title">{{identiteVisuelleDetails.name}}</div>
+    <div class="ville">{{identiteVisuelleDetails.details.city}}, {{identiteVisuelleDetails.details.country}}</div>
+    <div class="link"><a class="effect active" href="https://{{identiteVisuelleDetails.details.linkAdress}}" >{{identiteVisuelleDetails.details.linkAdress}}</a></div>
+  </div>
+  <div class="rightItem">
+    <p>{{identiteVisuelleDetails.details.desc}}</p>
+  </div>
+</div>
+
+<div class="mockup">
+
+  <img src="{{identiteVisuelleDetails.details.imgEntete}}" alt="">
+  <div class="logoType">
+    <img src="{{identiteVisuelleDetails.details.imgLogoType}}" alt="">
+  </div>
+
+</div>
+
+
+<div  [ngClass]="identiteVisuelleDetails.details.imgMockups.second === '' ? 'solo' : 'duo'">
+  <img src="{{identiteVisuelleDetails.details.imgMockups.first}}" alt="">
+  <img *ngIf="identiteVisuelleDetails.details.imgMockups.second !== '' " src="{{identiteVisuelleDetails.details.imgMockups.second}}" alt="">
+</div>

@@ -1,0 +1,55 @@
+.animHome {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .svg-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      display: block;
+
+      rect {
+        fill: white;
+        -webkit-mask: url(#mask);
+        mask: url(#mask);
+      }
+
+      defs {
+
+        mask {
+          text {
+            font-family: gowan;
+            font-size: 25em;
+            text-anchor: middle;
+            transform-origin: center;
+          }
+
+          rect {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  .video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    video {
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+}

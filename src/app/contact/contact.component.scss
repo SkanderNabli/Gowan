@@ -1,0 +1,31 @@
+.contact{
+  width: 100%;
+  position:fixed;
+
+  .title{
+    font-size:35px;
+    font-family: "Montserrat-ExtraBold";
+    text-transform: uppercase;
+  }
+
+  img{
+    transform: rotateZ(-90deg) translate(-100%, 0);
+    transform-origin: top left;
+    height: 100vw;
+  }
+
+  .info{
+    display:grid;
+    justify-content: center;
+    margin: 5%;
+    font-family: Montserrat-Bold;
+
+    .separation{
+      font-size: 40px;
+    }
+
+    *{
+      margin: 5% auto
+    }
+  }
+}
